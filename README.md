@@ -31,7 +31,7 @@ $$\delta_i^{(l)} = (\sum\limits_{j = 1}^{{s_{l + 1}}}{W_{ji}^{(l)}\delta _j^{(l 
  memory cell:
 $$c_t^l = i \otimes g + f \otimes c_{t - 1}^l$$
 
-假设在时间t步，我们有残差$$\frac{{\partial L}}{{\partial c_t^l}}$$,根据链式法则,
+假设在时间t步，我们有残差$\frac{{\partial L}}{{\partial c_t^l}}$,根据链式法则,
 $$\frac{\partial }{{\partial c_{t - 1}^l}}: = \frac{\partial }{{\partial c_{t - 1}^l}} + f \otimes \frac{{\partial L}}{{\partial c_t^l}}
 $$
 dg
