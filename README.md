@@ -21,9 +21,21 @@ $$\delta_i^{(l)} = (\sum\limits_{j = 1}^{{s_{l + 1}}}{W_{ji}^{(l)}\delta _j^{(l 
  
  对于LSTM:
  
- 为什么会解决梯度消失的问题呢? 这里面引入了几个门.这些门的组合控制了，我们需要传导什么信息.
- 
- 
+ 这里面引入了几个门.这些门的组合控制了，我们需要传导什么信息.
+  ![image](https://github.com/cuixue/NLP/blob/master/gates.png)
+ 为什么 会
+  解决梯度消失的问题呢? 参考:https://www.quora.com/How-does-LSTM-help-prevent-the-vanishing-and-exploding-gradient-problem-in-a-recurrent-neural-network
+  
+  在lstm中，cell的激活函数是 identity function.
+  
+ memory cell:
+$$c_t^l = i \otimes g + f \otimes c_{t - 1}^l$$
+
+假设在时间t步，我们有残差$$\frac{{\partial L}}{{\partial c_t^l}}$$,根据链式法则,
+$$\frac{\partial }{{\partial c_{t - 1}^l}}: = \frac{\partial }{{\partial c_{t - 1}^l}} + f \otimes \frac{{\partial L}}{{\partial c_t^l}}
+$$
+
+
 
 
 
