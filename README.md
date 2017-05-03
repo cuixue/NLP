@@ -39,7 +39,8 @@ $$
 
 
 这里，rnn的优化方法,主要有两类:BPTT和RTRL.其中,BPTT是整个sequence都结束,更新一次参数.而RTRL是实时的,每个item更新一次参数. 实时的虽然更精确,但是时间复杂度更高.所以,一般采用BPTT
-参考: http://www.dlsi.ua.es/~mlf/nnafmc/pbook/node29.html
+
+参考: http://www.dlsi.ua.es/~mlf/nnafmc/pbook/node29.html  ,http://r2rt.com/styles-of-truncated-backpropagation.html
 
 
 
