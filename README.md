@@ -38,7 +38,8 @@ $$
 这里,forget get deceides how long to remain information
 
 
-
+这里，rnn的优化方法,主要有两类:BPTT和RTRL.其中,BPTT是整个sequence都结束,更新一次参数.而RTRL是实时的,每个item更新一次参数.
+参考: http://www.dlsi.ua.es/~mlf/nnafmc/pbook/node29.html
 
 
 
